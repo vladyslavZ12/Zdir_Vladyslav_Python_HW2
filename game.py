@@ -6,17 +6,21 @@ from gameFunctions import winlose, config, compare
 
 while config.player is False:
 	# set config.player to True
-	print("**********************************")
-	print("Computer lives: ", config.computer_lives, "/",config.total_lives,"\n")
-	print("Player lives: ", config.player_lives, "/",config.total_lives,"\n")
-	print("Choose your weapon!\n")
-	print("**********************************")
+	print("■■■■■■■■□□□ Rock Paper Scissors □□□■■■■■■■■")
+	print("♡ ♡ ♡ ♡ ♡ Computer lives ♡ ♡ ♡ ♡ ♡ :", config.computer_lives, "/",config.total_lives,)
+	print("●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬● ")
+	print("♡ ♡ ♡ ♡ ♡ Player lives ♡ ♡ ♡ ♡ ♡ : ", config.player_lives, "/",config.total_lives,)
+	print("●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬● ")
+	print("↣↣↣↣↣↣↣↣↣Choose your weapon↣↣↣↣↣↣↣↣↣!")
+	print("●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬● ")
+
+	
 
 	config.player = input("choose rock, paper or scissors: ")
 	config.player = config.player.lower()
 
-	print("computer chose ", config.computer, "\n")
-	print("player chose ", config.player, "\n")
+	print("●▬▬▬▬▬▬▬▬▬▬▬▬▬▬computer chose▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬● ", config.computer,)
+	print("●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬player chose▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬● ", config.player, )
 
 	### this is where you would call compere
 
