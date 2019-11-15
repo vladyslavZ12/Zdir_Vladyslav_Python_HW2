@@ -9,31 +9,47 @@ def comparechoices(cmpt, plr):
 	if plr == "quit":
 		exit()
 	elif cmpt == plr:
-		print("tie! no one wins, play again")
+		print("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀")
+		print("=======tie! no one wins, play again=======")
+		print("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀")
 
 	elif plr == "rock":
 		if cmpt == "paper":
-			print("You lose!", cmpt, "covers", plr, "\n")
+			print("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀")
+			print(" You lose!ˇ︿ˇˇ︿ˇˇ︿ˇˇ︿ˇˇ︿ˇˇ︿ˇˇ︿ˇ", cmpt, "covers", plr,)
+			print("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀")
 			config.player_lives = config.player_lives - 1
 		else:
-			print("You win!", plr, "smashes", cmpt, "\n")
+			print("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀")
+			print("You win(♛‿♛)(♛‿♛)(♛‿♛)(♛‿♛)(♛‿♛)(♛‿♛)!", plr, "smashes", cmpt,)
+			print("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀")
 			config.computer_lives = config.computer_lives - 1
 
 	elif plr == "paper":
 		if cmpt == "scissors":
-			print("You lose!", cmpt,"cuts", config.player, "\n")
+			print("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀")
+			print("You lose!ˇ︿ˇˇ︿ˇˇ︿ˇˇ︿ˇˇ︿ˇˇ︿ˇˇ︿ˇ ", cmpt,"cuts", config.player,)
+			print("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀")
 			config.player_lives = config.player_lives - 1
 		else:
-			print("You win!", plr, "covers", cmpt, "\n")
+			print("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀")
+			print("You win!(♛‿♛)(♛‿♛)(♛‿♛)(♛‿♛)(♛‿♛)(♛‿♛)", plr, "covers", cmpt,)
+			print("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀")
 			config.computer_lives = config.computer_lives - 1
 
 	elif plr == "scissors":
 		if cmpt == "rock":
-			print("You lose!", cmpt, "smashes", plr, "\n")
+			print("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀")
+			print("ˇ︿ˇ You lose!ˇ︿ˇ ", cmpt, "smashes", plr, "\n")
+			print("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀")
 			config.player_lives = config.player_lives - 1
 		else:
-			print("You win!", plr, "cuts", cmpt, "\n")
+			print("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀")
+			print("You win!(♛‿♛)(♛‿♛)(♛‿♛)(♛‿♛)(♛‿♛)(♛‿♛)", plr, "cuts", cmpt,)
+			print("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀")
 			config.computer_lives = config.computer_lives - 1
 
 	else:
+		print("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀")
 		print("That's not a valid choice, try again")
+		print("▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀")
